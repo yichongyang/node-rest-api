@@ -13,8 +13,8 @@ RUN npm ci
 # Bundle application source
 COPY . .
 
-# Bind application to port 9000
-EXPOSE 8000
+# Bind application to port 8080 and 8443
+EXPOSE 8080
 EXPOSE 8443 
 
 # Define the command to run the application
