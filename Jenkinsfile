@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-        CONTAINER_COUNT = 5
+        CONTAINER_COUNT = 1
     }
     stages{
         stage('Build Node Docker Image'){
