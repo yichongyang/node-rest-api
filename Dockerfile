@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # Bind application to port 8080 and 8443
-EXPOSE 8080
+EXPOSE 8000
 EXPOSE 8443 
 
 # Define the command to run the application

@@ -10,7 +10,7 @@ const options = {
 // Create express object
 const express = require('express')
 const app = express()
-const httpPort = 8080
+const httpPort = 8000
 const httpsPort = 8443
 
 // Parse JSON using express
