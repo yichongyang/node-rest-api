@@ -13,7 +13,7 @@ pipeline {
         stage('Launch Node Docker Containers'){
             steps{
                 echo 'Launching the node app docker containers ...'
-                bat "startNodeApps.bat ${CONTAINER_COUNT}"
+                bat "startNodeApp.bat ${CONTAINER_COUNT}"
             }
         }
     }
