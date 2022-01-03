@@ -37,7 +37,7 @@ app.get('/movies', (req, res) => {
 })
 
 // add movice to the list
-app.post('/movies', (req, res) => {
+app.post('/movie', (req, res) => {
     const movie = req.body
     console.log(movie)
     movies.push(movie)
@@ -46,7 +46,7 @@ app.post('/movies', (req, res) => {
 })
 
 // search a movie in the list
-app.get('/movies/:id', (req, res) => {
+app.get('/movie/:id', (req, res) => {
     const id = req.params.id
 
     for(let movie of movies){
@@ -59,7 +59,7 @@ app.get('/movies/:id', (req, res) => {
 })
 
 // remove movie from the list
-app.delete('/movies/:id', (req, res) => {
+app.delete('/movie/:id', (req, res) => {
     const id = req.params.id
     var title
 
